@@ -1,0 +1,43 @@
+@mixin before_circle{
+    &:before{
+        content: '';
+        position: absolute;
+        width: 63px;
+        height: 63px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+        top: 66%;
+        left: 0;
+    }
+}
+
+@mixin purple_circle{
+    &:before{
+        content: '';
+        position: absolute;
+        width: 839px;
+        height: 839px;
+        border-radius: 100%;
+        background: #666eff;
+        z-index: 1;
+        top: -365px;
+        left: 565px;
+        transition: 1s all;
+    }
+}
+
+@mixin green_circle{
+    &:before{
+        content: '';
+        position: absolute;
+        width: 839px;
+        height: 839px;
+        border-radius: 100%;
+        background: #66ffb5;
+        z-index: -1;
+        top: -120px;
+        left: 210px;
+        transition: 1s all;
+    }
+}

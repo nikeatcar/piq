@@ -1,0 +1,68 @@
+.head{
+    max-height: 700px;
+    background: url("../../img/head/bg.png") center (center/cover) no-repeat;
+    &__wrapper{
+        position: relative;
+        display: grid;
+        grid-template-columns: 770px 646px;
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+        grid-auto-rows: minmax(245px, auto);
+        column-gap: 70px;
+        row-gap: 40px;
+        @include purple_circle;
+        z-index: 2;
+    }
+    &__texts{
+        position: relative;
+        display: flex;
+        z-index: 2;
+    }
+    &__photo-wrapper{
+        position: relative;
+        @include green_circle;
+        z-index: 2;
+        transition: 1s all;
+        &:hover{
+            filter: contrast(110%);
+        } 
+    }
+    &__photo{
+        margin-top: 53px;
+        margin-left: -110px;
+    }
+    &__subtitle{
+        padding-left: 15px;
+        padding-top: 100px;
+    }
+    &__title{
+        padding-top: 50px;
+    }
+    &__elements{
+        padding-top: 30px;
+    }
+    &__btn{
+        margin-top: 59px;
+    }
+    &__logo{
+        width: 117px;
+    }
+    &__piq{
+        margin-top: 15px;
+        margin-left: 20px;
+        font-family: 'Impact';
+        font-size: 90px;
+        color: #fff;
+    }
+    .background__video {
+        width: 100vw;
+        max-height: 700px;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: brightness(0.7);
+      }
+}
