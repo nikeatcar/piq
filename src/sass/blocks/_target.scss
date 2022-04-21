@@ -1,0 +1,51 @@
+.target{
+    position: relative;
+    height: 700px;
+    z-index: 2;
+    background: url('../../img/target/skys.png');
+    &__subtitle{
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        text-align: center;
+        &:before{
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        padding-top: 40px;
+        text-align: left;
+    }
+    .divider{
+        margin-left: 0;
+    }
+    &__elements{
+        position: absolute;
+        top: 94px;
+        left: 803px;
+        z-index: 2;
+    }
+    &__image-wrapper{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        filter: brightness(90%) contrast(110%);
+    }
+    &__video-wrapper{
+        margin-left: -40%;
+        width: 180%;
+        overflow:hidden;
+        display:block;
+        height: 700px;
+        filter: brightness(90%);
+    }
+    &__video{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}

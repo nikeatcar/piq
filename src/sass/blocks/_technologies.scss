@@ -1,0 +1,52 @@
+.technologies{
+    padding-top: 58px;
+    height: 700px;
+    position: relative;
+    background: #ffba66;
+    z-index: 2;
+    &__subtitle{
+        text-align: center;
+        &:before{
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__img{
+        margin-left: 10px;
+        height: 100%;
+    }
+    &__title{
+        padding-top: 30px;
+        text-align: center;
+    }
+    &__title-double{
+        line-height: 35px;
+        text-align: center;
+    }
+    &__wrapper-global{
+        display: flex;
+        flex-direction: column;
+    }
+    &__grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(1, minmax(200px, auto)) / repeat(4, 200px);
+        grid-auto-rows: minmax(200px, auto);
+        gap: 80px;
+    }
+    &__wrapper{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__block{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        background: url('../../icons/technologies/bg.png');
+    }
+    &__text{
+        margin-top: 15px;
+    }
+}

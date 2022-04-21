@@ -9,6 +9,14 @@
     margin: 0 auto;
 }
 
+.title_fz14{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
 .title_fz36{
     font-family: 'Impact';
     font-size: 36px;
@@ -47,5 +55,59 @@
     }
 }
 
+.divider {
+    margin: 30px auto;
+    width: 150px;
+    height: 5px;
+    background-color: $main-color;
+}
+
+.background__video {
+    width: 100vw;
+    max-height: 700px;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.7);
+  }
+
+.feed-form{
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+width: 303px;
+input{
+    height: 50px;
+    border-color: #4B4B4B;
+    border-width: 1px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4B4B4B;
+    &:nth-child(3){
+        margin-bottom: 20px;
+    }
+}
+.text-message{
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    height: 244px;
+    width: 303px;
+    border-color: #4B4B4B;
+    border-width: 1px;
+    border-radius: 5px;
+}
+}
+
 @import 'blocks/head';
 @import 'blocks/about';
+@import 'blocks/target';
+@import 'blocks/technologies';
+@import 'blocks/contacts';

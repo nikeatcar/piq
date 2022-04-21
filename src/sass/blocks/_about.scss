@@ -1,6 +1,57 @@
 .about{
+    padding-top: 58px;
     position: relative;
-    min-height: 700px;
+    height: 700px;
     background-color: #66ffb5;
     z-index: 2;
+    &__subtitle{
+        text-align: center;
+        &:before{
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        padding-top: 40px;
+        text-align: center;
+    }
+    &__services{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        &-img{
+            max-width: 70px;
+        }
+    }
+    &__investigation{
+        &-texts{
+            margin-top: 50px;
+            width: 391px;
+            text-align: start;
+        }
+        &-text{
+            margin-top: 20px;
+        }
+    }
+    &__design{
+        &-texts{
+            margin-top: 50px;
+            width: 349px;
+        }
+        &-text{
+            margin-top: 20px;
+        }
+    }
+    &__development{
+        &-texts{
+            margin-top: 50px;
+            width: 391px;
+            text-align: end;
+        }
+        &-text{
+            margin-top: 20px;
+        }
+    }
 }

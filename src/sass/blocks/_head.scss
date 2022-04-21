@@ -1,5 +1,5 @@
 .head{
-    max-height: 700px;
+    height: 700px;
     background: url("../../img/head/bg.png") center (center/cover) no-repeat;
     &__wrapper{
         position: relative;
@@ -53,16 +53,4 @@
         font-size: 90px;
         color: #fff;
     }
-    .background__video {
-        width: 100vw;
-        max-height: 700px;
-        object-fit: cover;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        filter: brightness(0.7);
-      }
 }
