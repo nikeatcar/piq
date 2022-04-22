@@ -1,6 +1,6 @@
 .contacts{
     padding-top: 58px;
-    height: 700px;
+    /* height: 700px; */
     position: relative;
     background: #66c2ff;
     z-index: 2;
@@ -28,7 +28,8 @@
             transition: 0.6s;
             filter:drop-shadow(1px 1px 2px #000);
             &:hover{
-                filter:drop-shadow(1px 1px 0px #000);
+                filter:drop-shadow(1px 1px 2px $main-color);
+                transform: scale(1.1);
             }
         }
     }

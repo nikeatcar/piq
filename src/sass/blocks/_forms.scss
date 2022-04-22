@@ -1,0 +1,33 @@
+.feed-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    input{
+        height: 50px;
+        border: none;
+        border-width: 1px;
+        border-radius: 5px;
+        background: #FFFFFF;
+        margin-bottom: 15px;
+        padding: 0 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #4B4B4B;
+        &:nth-child(3){
+            margin-bottom: 20px;
+        }
+    }
+    &_mt25{
+        margin-top: 25px;
+    }
+    .textmessage{
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        height: 244px;
+        width: 303px;
+        border: none;
+        border-width: 1px;
+        border-radius: 5px;
+    }
+}

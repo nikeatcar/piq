@@ -26,9 +26,11 @@
     "not dead"
   ],
   "dependencies": {
+    "animate.css": "^4.1.1",
     "chokidar": "*",
     "gulp-babel": "^8.0.0",
     "imagemin": "*",
+    "jquery-validation": "^1.19.3",
     "node-fetch": "*",
     "pug": "*",
     "sass": "*"

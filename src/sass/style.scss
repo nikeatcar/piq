@@ -4,10 +4,34 @@
 @import 'base/fonts';
 @import 'base/mixins';
 
+body{
+    overflow-x: hidden;
+}
+
+.social-widget{
+    margin: 10% 0 0 -9px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    &__link{
+        padding: 5px;
+        img{
+            max-width: 50px;
+        }
+        transition: 0.6s all;
+        filter:drop-shadow(1px 1px 0px #000);
+        &:hover{
+            filter:drop-shadow(1px 1px 2px $main-color);
+        }
+    }
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
 }
+
 
 .title_fz14{
     font-family: 'Roboto';
@@ -57,9 +81,11 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    transition: 0.3s all;
+    transition: 0.6s all;
+
     &:hover{
-        filter: brightness(120%) drop-shadow(0px 0px 5px $main-color);
+        filter: brightness(105%);
+        transform: scale(1.01);
     }
 }
 
@@ -71,7 +97,6 @@
 }
 
 .background__video {
-    width: 100vw;
     max-height: 700px;
     object-fit: cover;
     position: fixed;
@@ -83,39 +108,11 @@
     filter: brightness(0.7);
   }
 
-.feed-form{
-margin-top: 30px;
-display: flex;
-flex-direction: column;
-width: 303px;
-input{
-    height: 50px;
-    border-color: #4B4B4B;
-    border-width: 1px;
-    border-radius: 5px;
-    background: #FFFFFF;
-    margin-bottom: 15px;
-    padding: 0 20px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #4B4B4B;
-    &:nth-child(3){
-        margin-bottom: 20px;
-    }
-}
-.text-message{
-    margin-bottom: 15px;
-    padding: 10px 20px;
-    height: 244px;
-    width: 303px;
-    border-color: #4B4B4B;
-    border-width: 1px;
-    border-radius: 5px;
-}
-}
-
 @import 'blocks/head';
 @import 'blocks/about';
 @import 'blocks/target';
 @import 'blocks/technologies';
 @import 'blocks/contacts';
+@import 'blocks/forms';
+@import 'blocks/modal';
+@import 'blocks/pageup';
