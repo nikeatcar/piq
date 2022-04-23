@@ -1,6 +1,6 @@
 .target{
     position: relative;
-    /* height: 700px; */
+    min-height: 700px;
     z-index: 2;
     background: url('../../img/target/skys.png');
     &__subtitle{
