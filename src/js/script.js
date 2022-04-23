@@ -27,7 +27,7 @@ function validateForms(form){
                 email: true,
                 maxlength: 20,
                 },
-            text: {
+            textmessage: {
                 required: true,
                 minlength: 20,
                 maxlength: 300,
@@ -49,7 +49,7 @@ function validateForms(form){
                   email: "Email должен быть в формате name@domain.com",
                   maxlength: jQuery.validator.format("максимум 20 символов!"),
                 },
-                text: {
+                textmessage: {
                     required: "Пожалуйста, введите ваше сообщение",
                     minlength: jQuery.validator.format("Минимум 20 символов!"),
                     maxlength: jQuery.validator.format("максимум 300 символов!"),
