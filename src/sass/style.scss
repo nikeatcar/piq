@@ -3,6 +3,7 @@
 @import 'base/variables';
 @import 'base/fonts';
 @import 'base/mixins';
+@import 'base/_media.sass';
 
 body{
     overflow-x: hidden;
@@ -28,7 +29,7 @@ body{
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -97,7 +98,7 @@ body{
 }
 
 .background__video {
-    max-height: 700px;
+    max-width: 1300px;
     object-fit: cover;
     position: fixed;
     left: 0;
