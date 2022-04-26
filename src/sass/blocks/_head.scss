@@ -10,7 +10,7 @@
         grid-auto-rows: minmax(245px, auto);
         column-gap: 70px;
         row-gap: 40px;
-        @include purple_circle;
+        /* @include purple_circle; */
         z-index: 2;
     }
     &__texts{
@@ -20,7 +20,7 @@
     }
     &__photo-wrapper{
         position: relative;
-        @include green_circle;
+        /* @include green_circle; */
         z-index: 2;
     }
     &__photo{
