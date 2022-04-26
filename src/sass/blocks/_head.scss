@@ -8,14 +8,16 @@
     &__photo-rg{
         position: absolute;
         top: 0;
-        right: -20px;
+        left: 204px;
         z-index: -1;
+        overflow:hidden;
     }
     &__photo-rp{
         position: absolute;
         top: 0;
-        right: -20px;
+        left: -180px;
         z-index: -1;
+        overflow:hidden;
     }
     &__wrapper{
         position: relative;
@@ -35,10 +37,10 @@
     }
     &__photo-wrapper{
         position: relative;
-        /* @include green_circle; */
         z-index: 2;
     }
     &__photo{
+        overflow:hidden;
         margin-top: 0;
         margin-left: -110px;
         transition: 1s all;

@@ -1,15 +1,153 @@
-@media (max-width: 1200px)
+@media only screen and (max-width: 1200px)
+	body
+		height: 100%
+		max-width: 1200px
+		margin: 15px auto
+
+	.head
+		&__subtitle
+			margin-left: 30px
+		.title_fz65
+			margin-left: 30px
+			font-size: 60px
+		&__btn
+			margin-top: 59px
+			margin-left: 30px
+		&__logo
+			width: 117px
+			margin-left: 30px
+		.head__piq
+			margin: 20px 0 0 20px
+			font-size: 80px
+
+	.target
+		.target__elements
+			left: 360px
+		.target__video-wrapper 
+			margin-left: -40%
+			width: 144%
+		.target__image-wrapper
+			left: -250px
 
 @media (max-width: 991px)
+	.head
+		&__elements
+			margin-left: -90px
+		.title_fz65
+			font-size: 55px
+		.head__photo
+			margin-left: -320px
+		.head__photo-rp
+			left: -340px
+		.head__photo-rg
+			left: -170px
+	.about
+		.about__services
+			display: block
+		.about__investigation
+			&-texts
+				margin: 0 auto
+				margin-top: 50px
+				padding-bottom: 50px
+				width: 400px
+				text-align: center
+		.about__design
+			&-texts
+				margin: 0 auto
+				margin-top: 50px
+				padding-bottom: 50px
+				width: 400px
+				text-align: center
+		.about__development
+			&-texts
+				margin: 0 auto
+				margin-top: 50px
+				padding-bottom: 50px
+				width: 400px
+				text-align: center
+	.target
+		.target__elements
+			left: 190px
+		.target__image-wrapper
+			left: -400px
+		.target__video-wrapper
+			display: none
+	.technologies
+		.technologies__grid
+			margin: 0 auto
+			margin-left: -100px
+			display: grid
+			grid-template: repeat(1, minmax(200px, auto)) / repeat(4, 150px)
+			grid-auto-rows: minmax(150px, auto)
+			gap: 80px
+	.contacts
+		.contacts__wrapper
+			margin: 0 -65px 0 -65px
+		.title_fz65
+			font-size: 60px
+		.title_fz36
+			font-size: 29px
+			
+
 @media (max-width: 767px)
+	.head
+		.head__logo
+			margin-top: -30px
+		.background__video
+			display: none
+		.head__subtitle
+			margin-top: -67px
+		.title_fz65
+			font-size: 45px
+			line-height: 60px
+		.title_fz36
+			font-size: 30px
+		.head__piq
+			margin: 28px 0 0 20px
+			font-size: 67px
+		.head__photo 
+			width: 80%
+			margin-top: 233px
+			margin-left: -561px
+		.head__photo-rp
+			left: -400px
+		.head__photo-rg
+			left: -340px
+
+	.target
+		.target__video
+			display: none
+		.title_fz16
+			padding-right: 10px
+		.title_fz65
+			font-size: 50px
+
+	.technologies
+		.title_fz65
+			font-size: 58px
+		.technologies__grid
+			margin-left: -119px
+			gap: 40px
+		.technologies__block
+			width: 180px
+	.contacts
+		.contacts__texts
+			margin-left: -50px
+		.title_fz65 
+			font-size: 44px
+		.contacts__subtitle-left
+			font-size: 33px
+			line-height: 40px
+		.social
+			width: 90%
+			img
+				width: 70px
+
 
 @media (max-width: 575px)
-	.pageup
-		display: none
-		left: 0
 	#cnsl 
-		top: 16%
-		left: 16%
+		top: 40%
+		left: 50%
 		.mdl__close
 			right: -10px
 			font-size: 90px
@@ -22,34 +160,36 @@
 		display: none
 	.head
 		height: 600px
-		margin-top: -30px
 		&__photo-rg
 			display: none
 		&__photo-rp
 			display: none
-		&__photo-wrapper
-			top: 52%
-			left: -430px
+		.head__logo
+			margin-top: -20px
+			margin-left: 100px
+		.head__photo-wrapper
+			top: 0%
+			left: -437px
 		.head__photo
 			width: 350px
 			margin-left: -80px
 		.head__subtitle
-			top: -60px
+			top: 8px
 			font-size: 25px
-			margin-left: -5px
+			margin-left: 93px
 		.head__texts
-			top: -70px
-			left: 20px
+			top: -12px
+			left: 70px
 		.head__title
 			font-size: 40px
-			line-height: 100px
+			line-height: 70px
 		.head__piq
 			margin-top: 50px
 			margin-left: 5px
 			font-size: 50px
 		.head__btn
-			margin-top: -30px
-			margin-left: 1%
+			margin-top: 30px
+			margin-left: 10%
 
 	.about
 		.title_fz36
@@ -99,6 +239,7 @@
 			margin: 0px auto
 		.technologies__wrapper-global
 			padding-bottom: 50px
+			margin-left: 190px
 		.technologies__grid
 			padding-top: 50px
 			grid-template: repeat(2,minmax(160px,auto))/repeat(2,170px)
@@ -123,6 +264,7 @@
 		.divider
 			margin: 0 0 20px 0
 		.contacts__wrapper
+			margin: 0px -10px 0 -65px
 			flex-direction: column
 			align-items: center
 			align-content: center
@@ -138,6 +280,10 @@
 			margin-top: 100px
 
 @media (max-width: 375px)
+	body
+		height: 100%
+		max-width: 375px
+		margin: 15px auto
 
 	#cnsl 
 		width: 26%
@@ -177,6 +323,9 @@
 			width: 200px
 			margin-top: -30px
 			margin-left: 1%
+	.about
+		.title_fz14
+			font-size: 13px
 
 	.technologies
 		.title_fz36
@@ -185,7 +334,7 @@
 			margin-top: -20px
 			font-size: 27px
 		.technologies__grid
-			margin-left: 1px
+			margin-left: -200px
 			padding-top: 30px
 			grid-template: repeat(2,minmax(160px,auto))/repeat(2,140px)
 			grid-auto-rows: minmax(170px,auto)
@@ -196,7 +345,7 @@
 		align-items: center
 		align-content: center
 		.contacts__wrapper
-			margin-left: -15px
+			margin-left: 45px
 		.title_fz14
 			font-size: 13px
 		.title_fz36
@@ -221,7 +370,7 @@
 				width: 70%
 		#footer-form
 			margin-top: 100px
-			margin-left: 13px
+			margin-left: -70px
 		
 @media (max-width: 320px)
 
@@ -268,8 +417,6 @@
 
 	.about
 		width: 108%
-		.title_fz14
-			font-size: 12px
 	.technologies
 		width: 108%
 		.title_fz36

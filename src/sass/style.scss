@@ -5,9 +5,17 @@
 @import 'base/mixins';
 @import 'base/_media.sass';
 
-body{
+  html{
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
-}
+    }
+
+  body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    }
 
 .social-widget{
     margin: 10% 0 0 -9px;
@@ -29,6 +37,7 @@ body{
 }
 
 .container {
+    box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
 }
@@ -107,7 +116,32 @@ body{
     bottom: 0;
     z-index: -1;
     filter: brightness(0.7);
+    overflow:hidden;
   }
+
+.pageup{
+    left: 20px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    svg{
+        fill: #fff;
+        width: 100%;
+    }
+    z-index: 5;
+    }
+
+#txtmeFrameWrapper{
+    display: none;
+    }
+#txtmeButtonWrapper{
+    display: none;
+    }
+#txtme_chat{
+    display: none;
+    }
 
 @import 'blocks/head';
 @import 'blocks/about';
@@ -116,4 +150,3 @@ body{
 @import 'blocks/contacts';
 @import 'blocks/forms';
 @import 'blocks/modal';
-@import 'blocks/pageup';
