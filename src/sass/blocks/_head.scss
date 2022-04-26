@@ -2,6 +2,21 @@
     min-width: 100%;
     max-height: 700px;
     background: url("../../img/head/bg.png") center (center/cover) no-repeat;
+    &__photo{
+        padding-top: 55px;
+    }
+    &__photo-rg{
+        position: absolute;
+        top: 0;
+        right: -20px;
+        z-index: -1;
+    }
+    &__photo-rp{
+        position: absolute;
+        top: 0;
+        right: -20px;
+        z-index: -1;
+    }
     &__wrapper{
         position: relative;
         display: grid;
@@ -24,7 +39,7 @@
         z-index: 2;
     }
     &__photo{
-        margin-top: 53px;
+        margin-top: 0;
         margin-left: -110px;
         transition: 1s all;
         &:hover{

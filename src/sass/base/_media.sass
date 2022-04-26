@@ -1,10 +1,12 @@
 @media (max-width: 1200px)
+
 @media (max-width: 991px)
 @media (max-width: 767px)
 
 @media (max-width: 575px)
-	#up
+	.pageup
 		display: none
+		left: 0
 	#cnsl 
 		top: 16%
 		left: 16%
@@ -19,13 +21,18 @@
 	.background__video
 		display: none
 	.head
+		height: 600px
 		margin-top: -30px
+		&__photo-rg
+			display: none
+		&__photo-rp
+			display: none
 		&__photo-wrapper
-			top: 49%
-			left: -450px
+			top: 52%
+			left: -430px
 		.head__photo
-			width: 55%
-			margin-left: -70px
+			width: 350px
+			margin-left: -80px
 		.head__subtitle
 			top: -60px
 			font-size: 25px
@@ -41,7 +48,7 @@
 			margin-left: 5px
 			font-size: 50px
 		.head__btn
-			margin-top: 0
+			margin-top: -30px
 			margin-left: 1%
 
 	.about
@@ -141,30 +148,35 @@
 			font-size: 90px
 
 	.container
-		padding-left: 6px
+		padding-left: 15px
 	.head
 		height: 600px
-		margin-bottom: -30px
+		margin-top: -30px
 		&__photo-wrapper
-			top: 50%
-			left: -580px
+			top: 58%
+			left: -590px
 		.head__photo
-			width: 45%
-			margin-left: -50px
+			width: 60%
+			margin-left: -70px
+		.head__subtitle
+			top: -60px
+			font-size: 20px
+			margin-left: -5px
 		.head__texts
 			top: -70px
-			left: 0
+			left: 20px
 		.head__title
-			font-size: 30px
-			line-height: 50px
+			margin-left: -25px
+			font-size: 32px
+			line-height: 60px
 		.head__piq
-			margin-top: 40px
+			margin-top: 50px
 			margin-left: 5px
 			font-size: 40px
 		.head__btn
-			width: 30%
-			margin-top: 0
-			margin-left: 5px
+			width: 200px
+			margin-top: -30px
+			margin-left: 1%
 
 	.technologies
 		.title_fz36
@@ -222,34 +234,37 @@
 			font-size: 90px
 
 	.container
-		padding-left: 0
+		padding-right: 25px
+		padding-left: 0	
+
 	.head
-		width: 110%
-		height: 480px
-		margin-bottom: -30px
-		.head__logo
-			width: 65px
-			margin-left: 10px
+		height: 600px
+		margin-top: -30px
 		&__photo-wrapper
-			top: 45%
-			left: -580px
+			top: 58%
+			left: -590px
 		.head__photo
-			width: 32%
-			margin-left: -50px
-		.head__texts
-			top: -80px
-			left: 10px
+			width: 50%
+			margin-left: -70px
 		.head__subtitle
+			top: -60px
 			font-size: 20px
-			margin-left: 10px
+			margin-left: 5px
+		.head__texts
+			top: -70px
+			left: 20px
 		.head__title
-			font-size: 25px
-			line-height: 50px
+			margin-left: -15px
+			font-size: 26px
+			line-height: 60px
+		.head__piq
+			margin-top: 50px
+			margin-left: 5px
+			font-size: 40px
 		.head__btn
-			width: 23%
-			margin-top: -50px
-			margin-left: 15px
-			font-size: 15px
+			width: 200px
+			margin-top: -30px
+			margin-left: 1%
 
 	.about
 		width: 108%
@@ -267,8 +282,8 @@
 			padding-top: 30px
 			padding-bottom: 30px
 			grid-template: repeat(2,minmax(160px,auto))/repeat(2,160px)
-			grid-auto-rows: minmax(170px,auto)
-			gap: 20px
+			grid-auto-rows: minmax(160px,auto)
+			gap: 10px
 		.technologies__block
 			width: 145px
 
