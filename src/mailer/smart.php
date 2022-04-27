@@ -18,7 +18,7 @@ $mail->Username = '';                 // Наш логин
 <<<<<<< HEAD
 $mail->Password = '';                           // Наш пароль от ящика
 =======
-$mail->Password = 'cwmdnvsspbnlkbcj';                           // Наш пароль от ящика
+$mail->Password = '';                           // Наш пароль от ящика
 >>>>>>> main
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
@@ -27,7 +27,7 @@ $mail->setFrom('', 'piq');   // От кого письмо
 <<<<<<< HEAD
 $mail->addAddress('');     // Add a recipient
 =======
-$mail->addAddress('beyaxe5797@viemery.com');     // Add a recipient
+$mail->addAddress('');     // Add a recipient
 >>>>>>> main
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');

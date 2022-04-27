@@ -25,11 +25,11 @@
 			left: 360px
 		.target__video-wrapper 
 			margin-left: -40%
-			width: 144%
+			width: 200%
 		.target__image-wrapper
 			left: -250px
 
-@media (max-width: 991px)
+@media only screen and (max-width: 991px)
 	.head
 		&__elements
 			margin-left: -90px
@@ -89,7 +89,7 @@
 			font-size: 29px
 			
 
-@media (max-width: 767px)
+@media only screen and (max-width: 767px)
 	.head
 		.head__logo
 			margin-top: -30px
@@ -144,7 +144,7 @@
 				width: 70px
 
 
-@media (max-width: 575px)
+@media only screen and (max-width: 575px)
 	#cnsl 
 		top: 40%
 		left: 50%
@@ -279,7 +279,7 @@
 		#footer-form
 			margin-top: 100px
 
-@media (max-width: 375px)
+@media only screen and (max-width: 375px)
 	body
 		height: 100%
 		max-width: 375px
@@ -301,28 +301,32 @@
 		&__photo-wrapper
 			top: 58%
 			left: -590px
+		.head__logo
+			margin-top: 10px
+			margin-left: 80px
 		.head__photo
 			width: 60%
-			margin-left: -70px
+			margin-left: -225px
 		.head__subtitle
-			top: -60px
+			top: -10px
 			font-size: 20px
-			margin-left: -5px
+			margin-left: 81px
 		.head__texts
 			top: -70px
 			left: 20px
 		.head__title
-			margin-left: -25px
+			margin-top: 20px
+			margin-left: 61px
 			font-size: 32px
 			line-height: 60px
 		.head__piq
-			margin-top: 50px
+			margin-top: 70px
 			margin-left: 5px
 			font-size: 40px
 		.head__btn
 			width: 200px
 			margin-top: -30px
-			margin-left: 1%
+			margin-left: 10%
 	.about
 		.title_fz14
 			font-size: 13px
@@ -372,7 +376,7 @@
 			margin-top: 100px
 			margin-left: -70px
 		
-@media (max-width: 320px)
+@media only screen and (max-width: 320px)
 
 	#cnsl 
 		width: 28%
@@ -389,21 +393,24 @@
 	.head
 		height: 600px
 		margin-top: -30px
-		&__photo-wrapper
-			top: 58%
+		.head__logo
+			margin-top: 10px
+			margin-left: 105px
+		.head__photo-wrapper
+			top: -2%
 			left: -590px
 		.head__photo
 			width: 50%
 			margin-left: -70px
 		.head__subtitle
-			top: -60px
-			font-size: 20px
-			margin-left: 5px
+			margin-left: 100px
+			font-size: 20p
+			line-height: 33px
 		.head__texts
 			top: -70px
 			left: 20px
 		.head__title
-			margin-left: -15px
+			margin-left: 78px
 			font-size: 26px
 			line-height: 60px
 		.head__piq
@@ -413,10 +420,12 @@
 		.head__btn
 			width: 200px
 			margin-top: -30px
-			margin-left: 1%
+			margin-left: 12%
 
 	.about
 		width: 108%
+		.title_fz14
+			font-size: 12px
 	.technologies
 		width: 108%
 		.title_fz36
@@ -433,6 +442,8 @@
 			gap: 10px
 		.technologies__block
 			width: 145px
+		.technologies__wrapper-global
+			margin-left: 0
 
 	.contacts
 		width: 110%
@@ -441,6 +452,8 @@
 		align-content: center
 		.contacts__wrapper
 			margin-left: -15px
+		.contacts__texts
+			margin-left: -5px
 		.title_fz14
 			font-size: 13px
 		.title_fz36
@@ -458,12 +471,12 @@
 		.contacts__subtitle-left
 			display: none
 		.social
+			margin-left: 12px
 			position: absolute
 			top: 140px
 		.social__link
 			img
 				width: 70%
-		#footer-form
-			margin-top: 100px
-			margin-left: 13px
-		
+		#footer-form 
+			margin-top: 75px
+			margin-left: -2px
