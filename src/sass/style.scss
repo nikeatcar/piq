@@ -5,13 +5,9 @@
 @import 'base/mixins';
 @import 'base/_media.sass';
 
-  html{
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    }
-
-  body{
+  body, html{
+    padding: 0;
+    margin: 0;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -133,15 +129,13 @@
     z-index: 5;
     }
 
-#txtmeFrameWrapper{
-    display: none;
-    }
-#txtmeButtonWrapper{
-    display: none;
-    }
-#txtme_chat{
-    display: none;
-    }
+.txtme_chat-wrapper{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
 
 @import 'blocks/head';
 @import 'blocks/about';
