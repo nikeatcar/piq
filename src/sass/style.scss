@@ -137,6 +137,13 @@
     transform: translateX(-50%);
     z-index: 5;
 }
+.footer{
+    bottom: -40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
 
 @import 'blocks/head';
 @import 'blocks/bio';
