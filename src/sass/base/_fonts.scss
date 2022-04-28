@@ -1,9 +1,14 @@
 * {
-    font-family: 'Impacto', Impact, sans-serif;
+    font-family: 'Oswald', sans-serif;
   }
 
+@font-face{
+    font-family: 'Oswald', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+}
+
 @font-face {
-    font-family: 'Impact', 'Charcoal', sans-serif, 'Tahoma', 'Helvetica', sans-serif!important;
+    font-family: 'Impacto', Impact, sans-serif;
     src: url('../../fonts/Impact.eot');
     src: url('../../fonts/Impact.eot?#iefix') format('embedded-opentype'),
     url('../../fonts/Impact.woff') format('woff'),
