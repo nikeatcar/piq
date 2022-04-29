@@ -1,0 +1,21 @@
+.flag-icon-background
+  background-size: contain
+  background-position: 50%
+  background-repeat: no-repeat
+
+.flag-icon
+  @extend .flag-icon-background
+  position: relative
+  display: inline-block
+  width: calc(4 / 3) * 2em
+  line-height: 2em
+  &:before
+    content: '\00a0'
+  &.flag-icon-squared
+    width: 2em
+
+@mixin flag-icon($country)
+  .flag-icon-#{$country}
+    background-image: url(#{$flag-icon-css-path}#{$flag-icon-rect-path}/#{$country}.svg)
+    &.flag-icon-squared
+      background-image: url(#{$flag-icon-css-path}#{$flag-icon-square-path}/#{$country}.svg)

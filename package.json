@@ -28,6 +28,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "chokidar": "*",
+    "flag-icons": "^6.2.0",
     "gulp-babel": "^8.0.0",
     "imagemin": "*",
     "jquery-validation": "^1.19.3",
