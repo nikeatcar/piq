@@ -1,5 +1,5 @@
 
-<meta charset="utf-8"> 
+<meta charset="utf-8">
 <?php
 error_reporting( E_ERROR );   //Отключение предупреждений и нотайсов (warning и notice) на сайте
 // создание переменных из полей формы		
@@ -38,5 +38,4 @@ mail($address, $note_text, $body_text,"Content-type:text/plain; windows-1251");
     
 echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $email</b>.</p>";
 }
-
 ?>

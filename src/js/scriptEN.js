@@ -64,12 +64,35 @@ validateForms('#popup-form');
 /* $('input[name=phone]').mask("+375 (99) 999 99 99"); */
 
 /* ЗАКРЫТИЕ ФОРМЫ И СПС */
-$('.button_submit').on('click', function(){
+function clearForms(){
+    $("#popup-form")[0].reset();
+    $("#footer-form")[0].reset();
+    $("#cnsl-form")[0].reset();
+}
+
+function popupFinish(){
     if ($("#popup-form").valid()) {
         $('.mdl').fadeOut();
         $('.mdl_mini').fadeIn('slow');
     }
-});
+}
+
+
+function footerFinish(){
+    if ($("#footer-form").valid()) {
+        $('.overlay, #tnx').fadeIn('slow');
+    }
+}
+
+function cnslFinish(){
+    if ($("#cnsl-form").valid()) {
+        $('.overlay, #tnx').fadeIn('slow');
+    }
+}
+
+$('.button_submit').on('click', popupFinish);
+$('.button_submit').on('click', footerFinish);
+$('.button_submit').on('click', cnslFinish);
 
 
     /* МЯГКИЙ СКРОЛЛ И PGUP */
