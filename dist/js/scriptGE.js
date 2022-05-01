@@ -61,7 +61,7 @@ function validateForms(form){
 validateForms('#cnsl-form');
 validateForms('#footer-form');
 validateForms('#popup-form');
-$('input[name=phone]').mask("+995 999 999 999");
+/* $('input[name=phone]').mask("+995 999 999 999"); */
 
 /* ОТПРАВКА ПОЧТЫ */
 $('form').submit(function(e){
