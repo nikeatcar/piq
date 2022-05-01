@@ -187,7 +187,8 @@
                     <br>სტაბილურია ინტერნეტიდან ახალი მომხმარებლების მოზიდვით.
                     <br>დღეს ბიზნესის ვებსაიტი არის წვლილი არა მხოლოდ თქვენს ბიზნესში, არამედ თქვენს მომავალშიც.
                 </p>
-                <form id="cnsl-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+                <form id="cnsl-form" class="feed-form" action="mailer/b0.php" method="POST" target="ifrm1">
+                    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                     <input name="name" required placeholder="თქვენი სახელი" type="text">
                     <input name="phone" required placeholder="თქვენი ტელეფონის ნომერი" type="tel">
                     <button class="button button_submit animate__animated animate__tada wow" data-wow-duration="1s" data-wow-delay="0.2s">შეუკვეთეთ კონსულტაცია</button>
@@ -324,7 +325,8 @@
 
                 </div>
                 
-                <form id="footer-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+                <form id="footer-form" class="feed-form" action="mailer/b0.php" method="POST" target="ifrm1">
+                    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                     <input name="name" required placeholder="თქვენი სახელი" type="text">
                     <input name="phone" required placeholder="თქვენი ტელეფონის ნომერი" type="tel">
                     <input name="email" required placeholder="თქვენი ელ ფოსტა" type="email">
@@ -342,7 +344,8 @@
             <div class="mdl__close">&times;</div>
             <h2 class="mdl__subtitle">უბრალოდ შეავსეთ განაცხადის ფორმა</h2>
             <h3 class="mdl__descr">და ჩვენ დაგიკავშირდებით</h3>
-            <form class="feed-form feed-form_mt25" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+            <form id="popup-form" class="feed-form feed-form_mt25" action="mailer/b0.php" method="POST" target="ifrm1">
+                <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                 <input name="name" required placeholder="თქვენი სახელი" type="text">
                 <input name="phone" required placeholder="თქვენი ტელეფონის ნომერი" type="tel">
                 <input name="email" required placeholder="თქვენი ელ ფოსტა" type="email">

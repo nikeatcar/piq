@@ -187,7 +187,8 @@
                     <br>stable by attracting new customers from the Internet.
                     <br>A website for business today is a contribution not only to your business, but also to your future.
                 </p>
-                <form id="cnsl-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+                <form id="cnsl-form" class="feed-form" action="mailer/b0.php" method="POST" target="ifrm1">
+                    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                     <input name="name" placeholder="Your name" type="text">
                     <input name="phone" placeholder="Your mobile" type="tel">
                     <button class="button button_submit animate__animated animate__tada wow" data-wow-duration="1s" data-wow-delay="0.2s">Order a consultation</button>
@@ -324,7 +325,8 @@
 
                 </div>
                 
-                <form id="footer-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+                <form id="footer-form" class="feed-form" action="mailer/b0.php" method="POST" target="ifrm1">
+                    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                     <input name="name" required placeholder="Your name" type="text">
                     <input name="phone" required placeholder="Your mobile" type="tel">
                     <input name="email" required placeholder="Your email" type="email">
@@ -342,7 +344,8 @@
             <div class="mdl__close">&times;</div>
             <h2 class="mdl__subtitle">Just fill out the application form</h2>
             <h3 class="mdl__descr">and we will contact you</h3>
-            <form class="feed-form feed-form_mt25" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, '../smart.php')">
+            <form id="popup-form" class="feed-form feed-form_mt25" action="mailer/b0.php" method="POST" target="ifrm1">
+                <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
                 <input name="name" required placeholder="Your name" type="text">
                 <input name="phone" required placeholder="Your mobile" type="tel">
                 <input name="email" required placeholder="Your email" type="email">

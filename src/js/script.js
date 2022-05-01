@@ -3,7 +3,7 @@
     $('.overlay, #cnsl').fadeIn('slow');
 });
 $('.mdl__close').on('click', function(){
-    $('.overlay, #cnsl, #thx, #order').fadeOut('slow');
+    $('.overlay, .mdl_mini, .mdl').fadeOut('slow');
 });
 
 $(document).ready(function(){
@@ -63,28 +63,13 @@ validateForms('#footer-form');
 validateForms('#popup-form');
 /* $('input[name=phone]').mask("+375 (99) 999 99 99"); */
 
-/* ОТПРАВКА ПОЧТЫ */
-$('form').submit(function(e){
-    e.preventDefault();
-
-    if (!$(this).valid()){
-        return;
+/* ЗАКРЫТИЕ ФОРМЫ И СПС */
+$('.button_submit').on('click', function(){
+    if ($("#popup-form").valid()) {
+        $('.mdl').fadeOut();
+        $('.mdl_mini').fadeIn('slow');
     }
-
-    $.ajax({
-        type: "POST",
-        url: "mailer/b0.php",
-        data: $(this).serialize()
-    }).done(function(){
-        $(this).find("input").val("");
-        $('#cnsl-form, #footer-form, #popup-form').fadeOut();
-        $('.overlay, #tnx').fadeIn('slow');
-
-        $('form').trigger('reset');
-    });
-    return false;
 });
-
 
     /* МЯГКИЙ СКРОЛЛ И PGUP */
     $(window).scroll(function(){
