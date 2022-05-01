@@ -25,7 +25,7 @@ function validateForms(form){
             email: {
                 required: true,
                 email: true,
-                maxlength: 20,
+                maxlength: 30,
                 },
             textmessage: {
                 required: true,
@@ -41,13 +41,13 @@ function validateForms(form){
                   },
                 phone: {
                         required: "Пожалуйста, введите номер телефона",
-                        minlength: jQuery.validator.format("Формат номера: +375 111 11 11"),
+                        minlength: jQuery.validator.format("Формат номера: +375 (XX) XXX XX XX"),
                         maxlength: jQuery.validator.format("максимум 15 символов!"),
                     },
                 email: {
                   required: "Нам необходим ваш email для связи",
                   email: "Email должен быть в формате name@domain.com",
-                  maxlength: jQuery.validator.format("максимум 20 символов!"),
+                  maxlength: jQuery.validator.format("максимум 30 символов!"),
                 },
                 textmessage: {
                     required: "Пожалуйста, введите ваше сообщение",
@@ -64,32 +64,27 @@ validateForms('#popup-form');
 /* $('input[name=phone]').mask("+375 (99) 999 99 99"); */
 
 /* ОТПРАВКА ПОЧТЫ */
-// Отправка данных на сервер
-function send(event, php){
-    console.log("Отправка запроса");
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    var req = new XMLHttpRequest();
-    req.open('POST', php, true);
-    req.onload = function() {
-        if (req.status >= 200 && req.status < 400) {
-        json = JSON.parse(this.response); // Ебанный internet explorer 11
-            console.log(json);
-            
-            // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
-            if (json.result == "success") {
-                // Если сообщение отправлено
-                alert("Сообщение отправлено");
-            } else {
-                // Если произошла ошибка
-                alert("Ошибка. Сообщение не отправлено");
-            }
-        // Если не удалось связаться с php файлом
-        } else {alert("Ошибка сервера. Номер: "+req.status);}}; 
-    
-    // Если не удалось отправить запрос. Стоит блок на хостинге
-    req.onerror = function() {alert("Ошибка отправки запроса");};
-    req.send(new FormData(event.target));
+$('form').submit(function(e){
+    e.preventDefault();
+
+    if (!$(this).valid()){
+        return;
     }
+
+    $.ajax({
+        type: "POST",
+        url: "mailer/b0.php",
+        data: $(this).serialize()
+    }).done(function(){
+        $(this).find("input").val("");
+        $('#cnsl-form, #footer-form, #popup-form').fadeOut();
+        $('.overlay, #tnx').fadeIn('slow');
+
+        $('form').trigger('reset');
+    });
+    return false;
+});
+
 
     /* МЯГКИЙ СКРОЛЛ И PGUP */
     $(window).scroll(function(){

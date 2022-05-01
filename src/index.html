@@ -186,9 +186,9 @@
                     <br>стабильной за счёт привлечения новых клиентов из интернета.
                     <br>Сайт для бизнеса сегодня - это вклад не только в ваше дело, но и в ваше будущее.
                 </p>
-                <form id="cnsl-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, 'smart.php')">
+                <form id="cnsl-form" class="feed-form" action="mailer/b0.php" method="POST" target="_blank">
                     <input name="name" placeholder="Ваше имя" type="text">
-                    <input name="phone" placeholder="Ваш телефон" type="tel">
+                    <input name="email" required placeholder="Ваш E-mail" type="email">
                     <button class="button button_submit animate__animated animate__tada wow" data-wow-duration="1s" data-wow-delay="0.2s">заказать кОНСУЛЬТАЦИЮ</button>
                 </form>
             </div>
@@ -323,7 +323,7 @@
 
                 </div>
                 
-                <form id="footer-form" class="feed-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, 'smart.php')">
+                <form id="footer-form" class="feed-form" action="mailer/b0.php" method="POST" target="_blank">
                     <input name="name" required placeholder="Ваше имя" type="text">
                     <input name="phone" required placeholder="Ваш телефон" type="tel">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
@@ -341,11 +341,11 @@
             <div class="mdl__close">&times;</div>
             <h2 class="mdl__subtitle">Просто заполните форму заявки</h2>
             <h3 class="mdl__descr">и мы с вами свяжемся</h3>
-            <form class="feed-form feed-form_mt25" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, 'smart.php')">
+            <form id="popup-form" class="feed-form feed-form_mt25" action="mailer/b0.php" method="POST" target="_blank">
                 <input name="name" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш телефон" type="tel">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
-                <textarea name="textmessage" class="textmessage" name="text" placeholder="Введите сообщение" type="text"></textarea>
+                <textarea name="textmessage" class="textmessage" placeholder="Введите сообщение" type="text"></textarea>
                 <button class="button button_submit">задать вопрос</button>
             </form>
         </div>

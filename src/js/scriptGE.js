@@ -20,7 +20,7 @@ function validateForms(form){
             phone: {
                 required: true,
                 minlength: 13,
-                maxlength: 20,
+                maxlength: 19,
             },
             email: {
                 required: true,
@@ -35,24 +35,24 @@ function validateForms(form){
             },
             messages: {
                 name: {
-                    required: "Пожалуйста, введите своё имя",
-                    minlength: jQuery.validator.format("Минимум 2 символа!"),
-                    maxlength: jQuery.validator.format("максимум 15 символов!"),
+                    required: "გთხოვთ შეიყვანოთ თქვენი სახელი",
+                    minlength: jQuery.validator.format("მინიმუმ 2 სიმბოლო!"),
+                    maxlength: jQuery.validator.format("მაქსიმუმ 15 სიმბოლო!"),
                   },
                 phone: {
-                        required: "Пожалуйста, введите номер телефона",
-                        minlength: jQuery.validator.format("Формат номера: +375 (XX) XXX XX XX"),
-                        maxlength: jQuery.validator.format("максимум 15 символов!"),
+                        required: "გთხოვთ შეიყვანოთ ტელეფონის ნომერი",
+                        minlength: jQuery.validator.format("ნომრის ფორმატი: +995 (XXX) XX XX XX"),
+                        maxlength: jQuery.validator.format("მაქსიმუმ 19 სიმბოლო!"),
                     },
                 email: {
-                  required: "Нам необходим ваш email для связи",
-                  email: "Email должен быть в формате name@domain.com",
-                  maxlength: jQuery.validator.format("максимум 30 символов!"),
+                  required: "ჩვენ გვჭირდება თქვენი ელ.წერილი დასაკავშირებლად",
+                  email: "ელფოსტა უნდა იყოს ფორმატში name@domain.com",
+                  maxlength: jQuery.validator.format("მაქსიმუმ 30 სიმბოლო!"),
                 },
                 textmessage: {
-                    required: "Пожалуйста, введите ваше сообщение",
-                    minlength: jQuery.validator.format("Минимум 20 символов!"),
-                    maxlength: jQuery.validator.format("максимум 300 символов!"),
+                    required: "გთხოვთ შეიყვანოთ თქვენი შეტყობინება",
+                    minlength: jQuery.validator.format("მინიმუმ 20 სიმბოლო!"),
+                    maxlength: jQuery.validator.format("მაქსიმუმ 300 სიმბოლო!"),
                   },
         },
     });
@@ -61,7 +61,7 @@ function validateForms(form){
 validateForms('#cnsl-form');
 validateForms('#footer-form');
 validateForms('#popup-form');
-/* $('input[name=phone]').mask("+375 (99) 999 99 99"); */
+$('input[name=phone]').mask("+995 999 999 999");
 
 /* ОТПРАВКА ПОЧТЫ */
 $('form').submit(function(e){

@@ -35,24 +35,24 @@ function validateForms(form){
             },
             messages: {
                 name: {
-                    required: "Пожалуйста, введите своё имя",
-                    minlength: jQuery.validator.format("Минимум 2 символа!"),
-                    maxlength: jQuery.validator.format("максимум 15 символов!"),
+                    required: "Please enter your name",
+                    minlength: jQuery.validator.format("Minimum 2 characters!"),
+                    maxlength: jQuery.validator.format("Maximum 15 characters!"),
                   },
                 phone: {
-                        required: "Пожалуйста, введите номер телефона",
-                        minlength: jQuery.validator.format("Формат номера: +375 (XX) XXX XX XX"),
-                        maxlength: jQuery.validator.format("максимум 15 символов!"),
+                        required: "Please enter a phone number",
+                        minlength: jQuery.validator.format("Number format: +1 (XXX) XXXXXXX"),
+                        maxlength: jQuery.validator.format("Maximum 15 characters!"),
                     },
                 email: {
-                  required: "Нам необходим ваш email для связи",
-                  email: "Email должен быть в формате name@domain.com",
-                  maxlength: jQuery.validator.format("максимум 30 символов!"),
+                  required: "We need your email to contact",
+                  email: "Email must be in the format name@domain.com",
+                  maxlength: jQuery.validator.format("Maximum 30 characters!"),
                 },
                 textmessage: {
-                    required: "Пожалуйста, введите ваше сообщение",
-                    minlength: jQuery.validator.format("Минимум 20 символов!"),
-                    maxlength: jQuery.validator.format("максимум 300 символов!"),
+                    required: "Please enter your message",
+                    minlength: jQuery.validator.format("Minimum 20 characters!"),
+                    maxlength: jQuery.validator.format("Maximum 300 characters!"),
                   },
         },
     });
